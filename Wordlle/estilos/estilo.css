@@ -1,0 +1,58 @@
+body {
+    background: #1e1e1e;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+#tabla {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    grid-gap: 10px;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.celda {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #333;
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222;
+    text-transform: uppercase;
+}
+
+.correcta { background: #7ac173 !important; }   
+.esta { background: #bda952 !important; }   
+.fallo  { background: #29292b !important; }   
+
+#teclado {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 5px;
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.tecla {
+    padding: 14px 0;
+    background: #818384;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    user-select: none;
+}
+
+.tecla.large { 
+    grid-column: span 2;
+
+ }
